@@ -4,7 +4,20 @@
 
 ## Overview
 
-The goal of this project is to combine everything you have learned about data wrangling, cleaning, and manipulation with Pandas so you can see how it all works together. For this project, you will start with this messy data set [Shark Attack](https://www.kaggle.com/teajay/global-shark-attacks/version/1). You will need to import it, use your data wrangling skills to clean it up, prepare it to be analyzed, and then export it as a clean CSV data file.
+The goal of this project is to combine everything you have learned about data wrangling, cleaning, and manipulation with Pandas so you can see how it all works together. For this project, you will start with one of these messy data sets: 
+
+* [Avocado prices](https://www.kaggle.com/neuromusic/avocado-prices)
+* [Plane crashes](https://www.kaggle.com/nguyenhoc/plane-crash)
+* [Goodreads books](https://www.kaggle.com/jealousleopard/goodreadsbooks)
+* [Top 1000 songs](https://opendata.socrata.com/Fun/Top-1-000-Songs-To-Hear-Before-You-Die/ed74-c6ni)
+* [Met visitors](https://github.com/metmuseum/openaccess/)
+* [National Drug Directory](https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory)
+* [London air quality](https://www.londonair.org.uk/london/asp/datadownload.asp)
+* [Climate change](https://data.world/worldbank/climate-change-data)
+* [European soccer](https://data.world/data-society/european-soccer-data)
+* [Big cities health](https://data.world/health/big-cities-health)
+
+You will need to import a data set, use your data wrangling skills to clean it up, prepare it to be analyzed, and then export it as a clean CSV data file.
 
 **You will be working individually for this project**, but we'll be guiding you along the process and helping you as you go. Show us what you've got!
 
