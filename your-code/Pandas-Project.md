@@ -15,7 +15,7 @@ A contunuación se describirá brevemente los pasos que se siguieron para realiz
 11. Con "filtered" pude filtrar pr año, artista y tema un valor en específico de mi data frame.
 12. Utilice el método de "concat" (concatenación de fila) para juntar dos categorías de datos de la misma columna, en este caso ARTIST.
 13. Con el método "min y max" pude sacar los valores de que canción era la más antigua y la más nueva.
-14. Con el método "sort.values" puede ordenar de manera ascendente el nombre de los valores de la columna "ARTISTS".
+14. Con el método "sort.values" puede ordenar de manera ascendente el nombre de los valores de la columna "ARTIST".
 15. Utilicé el método "melt" para ir viendo por artista y año el tipo de valor que tenían de la columna THEME.
 
 
