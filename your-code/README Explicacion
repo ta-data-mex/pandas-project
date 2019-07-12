@@ -1,0 +1,20 @@
+1: Decidi que base de datos usar, escogi las canciones porque me gusta la musica.
+2: Importe las librerias que iba a ocupar (como empece de un modo distinto del termine usando, importe mas de lo que use(las borre))
+3: Use el url para traer mis deatos al jupyter (usando openurl)
+4: Empece a trabajar con mis datos pero convertirlos en dataframes (tenia unos errores de sintaxis y regrese a ver mi data en internet) (Use engine = create_engine)
+5: Encontre que podia descargar un csv con la lista para trabajar con ella online(si me tarde como 1 hora para darme cuenta que podia hacer eso)
+6: Descargue el csv y lo agregue a mi proyecto para poder subirlo al Jupyter Notebook
+7: Ya en el Jupyter borre todas las librerias que no iba a ocupar
+8: Abri y converti en un DF el archivo 'Top_1_000_Songs_To_Hear_Before_You_Die.csv', revise cantidad de elementos (994)
+9: Busque los elementos que me causaban ruido en mi base de datos (URL de Spotify)
+10: Decidi modificar la columna para informar que la cancion en cuestion no tenia URL de Spotify
+11: Busque en Spotify y me di cuenta que varias canciones si tenian URL de Spotify
+12: Mejor opte por borrar la columna ya que no se un metodo para modificar en mi archivo de manera eficiente todos los URL faltantes
+13: Entregue una lista ya sin los errores y converti a csv con un nuevo nomb re haciendo referencia al numero de elementos reales
+14: Agregue procesos extras para tener al menos los 8 que se pedian
+
+Pues aprendi que las bases de datos, puede que necesiten poco o mucho data cleaning dependiendo de quien la hace, en este caso, la base de datos que agarre solo tenia un elemento que causaba ruido, lo optimo hubiera sido agregar un url externo o mandar el de spotify, pero las personas igual lo buscan cuando no esta asi que lo optimo para mi fue borrar la columna.
+
+Encontre que me costo trabajo el como arrancar, tal vez en parte por mi fatal de atencion al detalle y tratar de complicarme, pero al final despues de pensar y revisar todo descubri que muchas veces la solucion es mas facil de lo que aparenta.
+
+Como conclusión: mi proyecto no tendra los 8 procedimientos (aunque si use extras cuando decidia como abrirlos), pero hice a lo que mi parecer era correcto con la data (pude haber mandado los archivos que no tenian url a una de un sitio diferente como youtube y renombrar la variable como URL pero queria ser mas fiel a dejarlo como SPOTIFY), al final como la base de datos es muy corta solo aplique algunos elementos extras para algunas pruebas sobre que mas se le puede hacer a una base de datos, busque algunas cosas extras pero en general todo sali ode lo visto en el curso.
