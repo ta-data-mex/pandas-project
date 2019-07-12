@@ -11,7 +11,7 @@
 11: Busque en Spotify y me di cuenta que varias canciones si tenian URL de Spotify
 12: Mejor opte por borrar la columna ya que no se un metodo para modificar en mi archivo de manera eficiente todos los URL faltantes
 13: Entregue una lista ya sin los errores y converti a csv con un nuevo nomb re haciendo referencia al numero de elementos reales
-14: Agregue procesos extras para tener al menos los 8 que se pedian
+14: Al final agregue algunos procesos para checar como se comportaba mi data y poder visualizar datos que me llegaran a importar realmente
 
 Pues aprendi que las bases de datos, puede que necesiten poco o mucho data cleaning dependiendo de quien la hace, en este caso, la base de datos que agarre solo tenia un elemento que causaba ruido, lo optimo hubiera sido agregar un url externo o mandar el de spotify, pero las personas igual lo buscan cuando no esta asi que lo optimo para mi fue borrar la columna.
 
