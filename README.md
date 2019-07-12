@@ -1,60 +1,17 @@
 ![IronHack Logo](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_d5c5793015fec3be28a63c4fa3dd4d55.png)
 
-# Project: Data Cleaning and Manipulation with Pandas
+# Pandas Project: European Soccer
 
-## Overview
+# Objetivo principal:
 
-The goal of this project is to combine everything you have learned about data wrangling, cleaning, and manipulation with Pandas so you can see how it all works together. For this project, you will start with one of these messy data sets: 
-
-* [Avocado prices](https://www.kaggle.com/neuromusic/avocado-prices)
-* [Plane crashes](https://www.kaggle.com/nguyenhoc/plane-crash)
-* [Goodreads books](https://www.kaggle.com/jealousleopard/goodreadsbooks)
-* [Top 1000 songs](https://opendata.socrata.com/Fun/Top-1-000-Songs-To-Hear-Before-You-Die/ed74-c6ni)
-* [Met visitors](https://github.com/metmuseum/openaccess/)
-* [National Drug Directory](https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory)
-* [London air quality](https://www.londonair.org.uk/london/asp/datadownload.asp)
-* [Climate change](https://data.world/worldbank/climate-change-data)
-* [European soccer](https://data.world/data-society/european-soccer-data)
-* [Big cities health](https://data.world/health/big-cities-health)
-
-You will need to import a data set, use your data wrangling skills to clean it up, prepare it to be analyzed, and then export it as a clean CSV data file.
-
-**You will be working individually for this project**, but we'll be guiding you along the process and helping you as you go. Show us what you've got!
-
----
-
-## Technical Requirements
-
-The technical requirements for this project are as follows:
-
-* The dataset that we provide you is a significantly messy data set. Apply the different cleaning and manipulation techniques you have learned.
-* Import the data using Pandas.
-* Examine the data for potential issues.
-* Use at least 8 of the cleaning and manipulation methods you have learned on the data.
-* Produce a Jupyter Notebook that shows the steps you took and the code you used to clean and transform your data set.
-* Export a clean CSV version of your data using Pandas.
-
-## Necessary Deliverables
-
-The following deliverables should be pushed to your Github repo for this chapter.
-
-* **A cleaned CSV data file** containing the results of your data wrangling work.
-* **A Jupyter Notebook (data-wrangling.ipynb)** containing all Python code and commands used in the importing, cleaning, manipulation, and exporting of your data set.
-* **A ``README.md`` file** containing a detailed explanation of the process followed in the importing, cleaning, manipulation, and exporting of your data as well as your results, obstacles encountered, and lessons learned.
-
-## Suggested Ways to Get Started
-
-* **Examine the data and try to understand what the fields mean** before diving into data cleaning and manipulation methods.
-* **Break the project down into different steps** - use the topics covered in the lessons to form a check list, add anything else you can think of that may be wrong with your data set, and then work through the check list.
-* **Use the tools in your tool kit** - your knowledge of Python, data structures, Pandas, and data wrangling.
-* **Work through the lessons in class** & ask questions when you need to! Think about adding relevant code to your project each night, instead of, you know... _procrastinating_.
-* **Commit early, commit often**, don’t be afraid of doing something incorrectly because you can always roll back to a previous version.
-* **Consult documentation and resources provided** to better understand the tools you are using and how to accomplish what you want.
-
-## Useful Resources
-
-* [Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/)
-* [Pandas Tutorials](https://pandas.pydata.org/pandas-docs/stable/tutorials.html)
-* [StackOverflow Pandas Questions](https://stackoverflow.com/questions/tagged/pandas)
-* [Awesome Public Data Sets](https://github.com/awesomedata/awesome-public-datasets)
-* [Kaggle Data Sets](https://www.kaggle.com/datasets)
+ - Importar una base de Datos SQL que contiene datos sobre más de 25,000 partidos de futbol, más de 10,000 jugadores en ligas de 11 países europeos durante el período 2008 - 2016 (La base de datos contiene eventos detallados de los partidos, coordenadas que indican la posición de los jugadores durante cada uno de los juegos, así como las probabilidades calculadas por 10 casas de apuestas distintas para cada juego). 
+ 
+ - La base de datos en SQLite se divide en siete tablas: Country, League, Match, Player, Player Attributes, Team y Team Attributes. De las tablas que conforman la base de datos, se consideró que era necesaria la manipulación y limpieza de datos con dos: Player Attributes y Team. 
+ 
+ - Analizar cada una de las tablas y determinar cuál(es) merecen un análisis más a fondo, y sobre todo cuáles necesitan limpieza y manipulación de sus datos. 
+ 
+ - A lo largo de este proyecto, se aplicaron conceptos básicos pero muy eficientes tanto de Data Cleaning como Data Manipulation, entre ellos destacan: 1) Check missing values in a dataframe (and futher analysis about those missing values), 2) Remove low variance data, 3) Text Manipulation (Rename and Modify columns), 4) Filtering Records, 5) Binning Numeric Variables, 6) One-Hot Encoding Categorical Variables and 7) Exporting Dataframes to CVS.  
+ 
+ 
+ 
+ 
