@@ -6,8 +6,13 @@
 I chose the [London air quality](https://www.londonair.org.uk/london/asp/datadownload.asp).
 The data is from 1-nov-2018 to 1-jul-2019, including hourly mean values from pollutants such as Nitric Oxide (ug m-3), Nitrogen Dioxide (ug m-3), Ozone (ug m-3), PM10 Particulates, PM2.5 Particulates and Total Suspended Particles (TSP). The graph plot is shown below:
 * [Climate change](https://data.world/worldbank/climate-change-data)
-* [European soccer](https://data.world/data-society/european-soccer-data)
-* [Big cities health](https://data.world/health/big-cities-health)
+
+
+To use:
+https://www.londonair.org.uk/london/asp/datasite.asp?CBXSpecies1=NOm&CBXSpecies2=NO2m&CBXSpecies3=O3m&CBXSpecies5=PM10m&CBXSpecies7=PM25m&CBXSpecies8=TSPm&day1=1&month1=nov&year1=2018&day2=1&month2=jul&year2=2019&period=hourly&ratidate=&site=HP1&res=6&Submit=Replot+graph
+
+https://www.researchgate.net/post/How_can_I_deal_with_negative_and_zero_concentrations_of_PM25_PM10_and_gas_data
+
 
 You will need to import a data set, use your data wrangling skills to clean it up, prepare it to be analyzed, and then export it as a clean CSV data file.
 
