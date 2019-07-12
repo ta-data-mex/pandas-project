@@ -3,16 +3,8 @@
 # Project: Data Cleaning and Manipulation with Pandas
 
 ## Overview
-
-The goal of this project is to combine everything you have learned about data wrangling, cleaning, and manipulation with Pandas so you can see how it all works together. For this project, you will start with one of these messy data sets: 
-
-* [Avocado prices](https://www.kaggle.com/neuromusic/avocado-prices)
-* [Plane crashes](https://www.kaggle.com/nguyenhoc/plane-crash)
-* [Goodreads books](https://www.kaggle.com/jealousleopard/goodreadsbooks)
-* [Top 1000 songs](https://opendata.socrata.com/Fun/Top-1-000-Songs-To-Hear-Before-You-Die/ed74-c6ni)
-* [Met visitors](https://github.com/metmuseum/openaccess/)
-* [National Drug Directory](https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory)
-* [London air quality](https://www.londonair.org.uk/london/asp/datadownload.asp)
+I chose the [London air quality](https://www.londonair.org.uk/london/asp/datadownload.asp).
+The data is from 1-nov-2018 to 1-jul-2019, including hourly mean values from pollutants such as Nitric Oxide (ug m-3), Nitrogen Dioxide (ug m-3), Ozone (ug m-3), PM10 Particulates, PM2.5 Particulates and Total Suspended Particles (TSP). The graph plot is shown below:
 * [Climate change](https://data.world/worldbank/climate-change-data)
 * [European soccer](https://data.world/data-society/european-soccer-data)
 * [Big cities health](https://data.world/health/big-cities-health)
