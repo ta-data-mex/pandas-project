@@ -1,0 +1,24 @@
+PROYECTO DE DATOS: PLANE CRASH 
+
+DESCRIPCIÓN 
+
+PASOS REALIZADOS 
+
+1. Conocer la base en profundidad con comandos de visualización tales como head, tail, describe 
+2. Comienzo la limpieza localizando los valores null y reemplazandolos por valores más normalizados 
+3. Comienzo con el cambio de variables 
+4. Finalizado con un subset para dejar una base mucho más limpia y entendible para cualquier persona 
+
+
+DIFICULTADES 
+
+1. Me encontré con una base con muchos datos erroneos en sus variables de personas a bordo y fallecidos por accidente. 
+
+2. Me encontré con columnas que tenían muchos datos perdidos por lo que nos las tuve en cuenta en el estudio a pesar de ser importantes en caso de haber estado completas. 
+
+3. La base tenia errores de tipeo 
+
+
+AUTOR:
+
+RODOLFO PARDO
