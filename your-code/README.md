@@ -10,9 +10,13 @@
 - After this, the name of the columns was actualized and then the rows with any data that was NaN with the unrecoverable information. Then, the fields that were easy to fill were also modified.
 - These two steps helped to remove all the data with NaN values, then other information was actualized in order to have more uniformity on the data. Dates were changed into the corresponding format, a boolean flag was changed into 0 or 1, and extra text that was not needed was also modified.
 - This yield a cleaner data frame. Because of this, the exportation of the csv was done effectively. The separation used to divide the text is '|'.
+- This was also made to other file, due to the fact that the data had two different files, product and package. 
+
 
 #### Results:
-- The result obtained was a csv file named product.csv with the clean database.
+- The results obtained were two csv files named product.csv and Package.csv
+- Each of them had clean database. Two Jupyther notebooks were realized, each one for one package.
+
 
 #### Obstacles:
 - It was difficult to remember all the methods used in class, therefore a lot of documentation was needed to progress efficiently. Also there were other methods that I needed to check to achieve things such as converting a float number into a date. However, most of the progress was done with the techniques seen in class.
