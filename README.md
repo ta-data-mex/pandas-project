@@ -2,3 +2,6 @@
 
 # Pandas Project: European Soccer
 
+# Objetivo principal:
+
+ - Importar una base de Datos SQL que contiene 
