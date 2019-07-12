@@ -4,12 +4,12 @@
 ### Database used:
  * [National Drug Directory](https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory)
 
-#### Process:
-- First of all, the document was downloaded from the website, and Jupyter Notebook was implemented as an IDE to run python. Pandas was imported and the function pd.read_csv was used in order to obtain the text, separated by the tabulator. Then, the data frame was partially visualized in order to understand the data. 
-- General information of the dataframe was also obtained (lenght of dataframe and name of columns), also an analysis of the NaN values was done to drop the columns that didn't had 90% of the dataframe. 
+#### Proccess:
+- First of all, the document was downloaded from the website, and Jupyter Notebook was implemented as an IDE to run python. Pandas was imported and the function pd.read_csv was used in order to obtain the text, separated by the tabulator. Then, the data frame was partially visualized in order to understand the data.
+- General information of the data frame was also obtained (length of data frame and name of columns), also an analysis of the NaN values was done to drop the columns that didn't have 90% of the data frame.
 - After this, the name of the columns was actualized and then the rows with any data that was NaN with the unrecoverable information. Then, the fields that were easy to fill were also modified.
-- This two steps helped to remove all the data with NaN values, then other information was actualized in order to have more uniformity on the data. Dates were changed into the corresponding format, a boolean flag was changed into 0 or 1, and extra text that was not needed was also modified. 
-- This yield a cleaner dataframe. Because of this, the exportation of the csv was done effectively. The separation used to divide the text is '|'.
+- These two steps helped to remove all the data with NaN values, then other information was actualized in order to have more uniformity on the data. Dates were changed into the corresponding format, a boolean flag was changed into 0 or 1, and extra text that was not needed was also modified.
+- This yield a cleaner data frame. Because of this, the exportation of the csv was done effectively. The separation used to divide the text is '|'.
 
 #### Results:
 - The result obtained was a csv file named product.csv with the clean database.
