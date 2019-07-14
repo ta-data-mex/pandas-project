@@ -1,46 +1,29 @@
 ![IronHack Logo](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_d5c5793015fec3be28a63c4fa3dd4d55.png)
 
-# Project: Data Cleaning and Manipulation with Pandas
+# Project: Plane crashes dataset
 
 ## Overview
 
-The goal of this project is to combine everything you have learned about data wrangling, cleaning, and manipulation with Pandas so you can see how it all works together. For this project, you will start with one of these messy data sets: 
+I decided to use this dataset because I consider this dataset contain more problems with the data, since some columns with a lot of missing data until a bad representation of the data like strings with different fields incorporate.
 
-* [Avocado prices](https://www.kaggle.com/neuromusic/avocado-prices)
-* [Plane crashes](https://www.kaggle.com/nguyenhoc/plane-crash)
-* [Goodreads books](https://www.kaggle.com/jealousleopard/goodreadsbooks)
-* [Top 1000 songs](https://opendata.socrata.com/Fun/Top-1-000-Songs-To-Hear-Before-You-Die/ed74-c6ni)
-* [Met visitors](https://github.com/metmuseum/openaccess/)
-* [National Drug Directory](https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory)
-* [London air quality](https://www.londonair.org.uk/london/asp/datadownload.asp)
-* [Climate change](https://data.world/worldbank/climate-change-data)
-* [European soccer](https://data.world/data-society/european-soccer-data)
-* [Big cities health](https://data.world/health/big-cities-health)
+## Steps.
+Markup : 1. I started importing the basic library Pandas, and after when I went trought the follow steps also import.
+          2. I added some general information about the dataset, just to have available in the notebook.
+          3. I read the original csv of the dataset and stored in a variable like dataframe.
+          4. I explore in general aspects the dataset.
+          5. I check for missing values and I note the next important aspects.
+              1. The missing values has a string value '?'.
+              2. I had full information just for the 'date' column in the dataset.
+          6. I start the data cleaning column by column, with the next general actions.
+              1. Date column: I had a string with the structure "Month, day year", so in order to further analysis I split into three columns "month", "day" and "year", I consider that future filters could be easiest with this columns. I use regular expressions and list comprehension
+              2. Time column: It has a character that marks the format on 24hrs format, but I let it like char_unknown, and I also split the column into "hour" and minutes. I consider like in the date case that it could facilitate filters and analysis in the future. I use regular expressions, lambda functions and pd.DataFrame.apply method.
+              3. Location column: For this column I used an auxiliar file with the states of the United States because in the location column also we have a single String with the information about Region-Country location, but in the case of the crash was in the United States the String contain SubRegion-State location so if I found a Unite States state I had to consider the country like United States but if not I had to consider like a country the last part of the String.
+              4. Operator column: for this column I tried to homogenize in categories. So I identify the most comun operators and a category for those. I got a new column with 9 categories.
+              5.Route column: for this column I didn't apply any change because it has more complex variations than operators column.
+              6.Aircraft column: For this I applied the same strategy than operators.
+              7.I drop Flight number, Registration and Construction numbers columns because it doesn't hae to much info.
+              
 
-You will need to import a data set, use your data wrangling skills to clean it up, prepare it to be analyzed, and then export it as a clean CSV data file.
-
-**You will be working individually for this project**, but we'll be guiding you along the process and helping you as you go. Show us what you've got!
-
----
-
-## Technical Requirements
-
-The technical requirements for this project are as follows:
-
-* The dataset that we provide you is a significantly messy data set. Apply the different cleaning and manipulation techniques you have learned.
-* Import the data using Pandas.
-* Examine the data for potential issues.
-* Use at least 8 of the cleaning and manipulation methods you have learned on the data.
-* Produce a Jupyter Notebook that shows the steps you took and the code you used to clean and transform your data set.
-* Export a clean CSV version of your data using Pandas.
-
-## Necessary Deliverables
-
-The following deliverables should be pushed to your Github repo for this chapter.
-
-* **A cleaned CSV data file** containing the results of your data wrangling work.
-* **A Jupyter Notebook (data-wrangling.ipynb)** containing all Python code and commands used in the importing, cleaning, manipulation, and exporting of your data set.
-* **A ``README.md`` file** containing a detailed explanation of the process followed in the importing, cleaning, manipulation, and exporting of your data as well as your results, obstacles encountered, and lessons learned.
 
 ## Suggested Ways to Get Started
 
@@ -50,11 +33,3 @@ The following deliverables should be pushed to your Github repo for this chapter
 * **Work through the lessons in class** & ask questions when you need to! Think about adding relevant code to your project each night, instead of, you know... _procrastinating_.
 * **Commit early, commit often**, don’t be afraid of doing something incorrectly because you can always roll back to a previous version.
 * **Consult documentation and resources provided** to better understand the tools you are using and how to accomplish what you want.
-
-## Useful Resources
-
-* [Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/)
-* [Pandas Tutorials](https://pandas.pydata.org/pandas-docs/stable/tutorials.html)
-* [StackOverflow Pandas Questions](https://stackoverflow.com/questions/tagged/pandas)
-* [Awesome Public Data Sets](https://github.com/awesomedata/awesome-public-datasets)
-* [Kaggle Data Sets](https://www.kaggle.com/datasets)
