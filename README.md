@@ -10,54 +10,31 @@ The data is from Lewisham, particurarly from two sites abbreviated as PH1 and LW
 ![sketch1](https://dl.dropboxusercontent.com/s/z4sq6rabutl3qyj/Sketch_HP1.png?dl=0)
 
 * [Lewisham Catfor - abbreviated as LW2](https://www.londonair.org.uk/london/asp/datasite.asp?CBXSpecies1=NOm&CBXSpecies2=NO2m&CBXSpecies3=NOXm&CBXSpecies4=O3m&CBXSpecies5=SO2m&day1=1&month1=nov&year1=2018&day2=1&month2=jul&year2=2019&period=hourly&ratidate=&site=LW1&res=6&Submit=Plot+graph)
-![sketch2](https://dl.dropboxusercontent.com/s/4xmor50xgag98it/Sketch_LW2.png?dl=0)
+![sketch2](https://dl.dropboxusercontent.com/s/lozwje2sls3i7kr/Sketch_LW2.png?dl=0)
 
 
-To use:
-https://www.londonair.org.uk/london/asp/datasite.asp?CBXSpecies1=NOm&CBXSpecies2=NO2m&CBXSpecies3=O3m&CBXSpecies5=PM10m&CBXSpecies7=PM25m&CBXSpecies8=TSPm&day1=1&month1=nov&year1=2018&day2=1&month2=jul&year2=2019&period=hourly&ratidate=&site=HP1&res=6&Submit=Replot+graph
+## Steps of the data wrangling
+(your results, obstacles encountered, and lessons learned)
+* **0 - How the data is coming?** before diving into data cleaning, I did make sense of the given data. So, I sketched if I keep or drop the columns, as its follows:
 
-https://www.researchgate.net/post/How_can_I_deal_with_negative_and_zero_concentrations_of_PM25_PM10_and_gas_data
+**Site** - Site code: It is necessary since I want to merge two areas from Lewisham. *Keep it.* 
 
+**Species** - pollutants names with standard chemical notation (e.g., CO = carbon monoxide), meteorological parameters are as follows: WSPD = wind speed, WDIR = wind direction, BP = barometric pressure, TMP = ambient temperature, RAIN = rainfall, SOLR = incoming solar radiation. *Keep it.*
 
-You will need to import a data set, use your data wrangling skills to clean it up, prepare it to be analyzed, and then export it as a clean CSV data file.
+**DateTime** - Date and time of the measurement. This data is hourly mean value, i.e. for 01-jan-2018 12:00 encompasses measurements taken between 12:00 and 12:59 on 01 January 2018. *Keep it.*
 
-**You will be working individually for this project**, but we'll be guiding you along the process and helping you as you go. Show us what you've got!
+**Value** - Measurement concentration. *Keep it.*
 
----
+**Units** - Shows the units the values are quoted in. *Keep it.*
 
-## Technical Requirements
+**Provisional or Ratified** - P for provisional and R for Ratified. Provisional measurements are subjected to change. Ratified measurements have been through the full QAQC procedure and will not change in the future. *Keep it.*
 
-The technical requirements for this project are as follows:
+* **1- Changing title names** - I changed names in the most intuitive fashionable way.
+* **2- Rearranging columns order** - I reorder the columns, keeping in mind possible visualizations.
+* **3- Changing names** On this part I found a challenge: unexpected changes of the names. Unexpected variances of the names. I was thinking to replace the 'NO', but it changed me the 'NO2' as well. And will change the 'NOX' from the second source. So I preferred to keep pragmatic (and recognized) names from the pollutants. This is a sample of the precautions to take into consideration when we decide to change values or names.
+* **4- Skiping NaN values**, I decided to dropping the rows that had NaN values on its 'Value' column.
+* **5- Combining Data Frames** I used 'concat' method to attach rows with the same number of columns.
+* **6- Checking extreme values or outliers** Firstly, I focused on negative numbers, as they may be not reliable because of possible uncalibrated instruments [(as here is noted)](https://www.researchgate.net/post/How_can_I_deal_with_negative_and_zero_concentrations_of_PM25_PM10_and_gas_data). So I just indicated on the column 'Provisional or Ratified column that these values were not reliable.
 
-* The dataset that we provide you is a significantly messy data set. Apply the different cleaning and manipulation techniques you have learned.
-* Import the data using Pandas.
-* Examine the data for potential issues.
-* Use at least 8 of the cleaning and manipulation methods you have learned on the data.
-* Produce a Jupyter Notebook that shows the steps you took and the code you used to clean and transform your data set.
-* Export a clean CSV version of your data using Pandas.
-
-## Necessary Deliverables
-
-The following deliverables should be pushed to your Github repo for this chapter.
-
-* **Examine data
-
-* **A Jupyter Notebook (data-wrangling.ipynb)** containing all Python code and commands used in the importing, cleaning, manipulation, and exporting of your data set.
-* **A ``README.md`` file** containing a detailed explanation of the process followed in the importing, cleaning, manipulation, and exporting of your data as well as your results, obstacles encountered, and lessons learned.
-
-## Suggested Ways to Get Started
-
-* **Examine the data and try to understand what the fields mean** before diving into data cleaning and manipulation methods.
-* **Break the project down into different steps** - use the topics covered in the lessons to form a check list, add anything else you can think of that may be wrong with your data set, and then work through the check list.
-* **Use the tools in your tool kit** - your knowledge of Python, data structures, Pandas, and data wrangling.
-* **Work through the lessons in class** & ask questions when you need to! Think about adding relevant code to your project each night, instead of, you know... _procrastinating_.
-* **Commit early, commit often**, don’t be afraid of doing something incorrectly because you can always roll back to a previous version.
-* **Consult documentation and resources provided** to better understand the tools you are using and how to accomplish what you want.
-
-## Useful Resources
-
-* [Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/)
-* [Pandas Tutorials](https://pandas.pydata.org/pandas-docs/stable/tutorials.html)
-* [StackOverflow Pandas Questions](https://stackoverflow.com/questions/tagged/pandas)
-* [Awesome Public Data Sets](https://github.com/awesomedata/awesome-public-datasets)
-* [Kaggle Data Sets](https://www.kaggle.com/datasets)
+* **7- Creating an empty df called 'outliers'** This part could be further explored to find out if they should be kept in the data or dropped. Additionally,  it could be used for the creation of additional categorical fields. For example, how high or low are pollutants concentrations in the air. This could give us a flag if the air is dangerous for sensitive population. 
+* **8- Exporting clean data** :)
