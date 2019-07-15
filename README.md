@@ -14,20 +14,15 @@ The data is from Lewisham, particurarly from two sites abbreviated as PH1 and LW
 
 
 ## Steps of the data wrangling
-(your results, obstacles encountered, and lessons learned)
+
 * **0 - How the data is coming?** before diving into data cleaning, I did make sense of the given data. So, I sketched if I keep or drop the columns, as its follows:
 
-**Site** - Site code: It is necessary since I want to merge two areas from Lewisham. *Keep it.* 
-
-**Species** - pollutants names with standard chemical notation (e.g., CO = carbon monoxide), meteorological parameters are as follows: WSPD = wind speed, WDIR = wind direction, BP = barometric pressure, TMP = ambient temperature, RAIN = rainfall, SOLR = incoming solar radiation. *Keep it.*
-
-**DateTime** - Date and time of the measurement. This data is hourly mean value, i.e. for 01-jan-2018 12:00 encompasses measurements taken between 12:00 and 12:59 on 01 January 2018. *Keep it.*
-
-**Value** - Measurement concentration. *Keep it.*
-
-**Units** - Shows the units the values are quoted in. *Keep it.*
-
-**Provisional or Ratified** - P for provisional and R for Ratified. Provisional measurements are subjected to change. Ratified measurements have been through the full QAQC procedure and will not change in the future. *Keep it.*
+* * **Site** - Site code: It is necessary since I want to merge two areas from Lewisham. *Keep it.* 
+* * **Species** - pollutants names with standard chemical notation (e.g., CO = carbon monoxide), meteorological parameters are as follows: WSPD = wind speed, WDIR = wind direction, BP = barometric pressure, TMP = ambient temperature, RAIN = rainfall, SOLR = incoming solar radiation. *Keep it.*
+* * **DateTime** - Date and time of the measurement. This data is hourly mean value, i.e. for 01-jan-2018 12:00 encompasses measurements taken between 12:00 and 12:59 on 01 January 2018. *Keep it.*
+* * **Value** - Measurement concentration. *Keep it.*
+* * **Units** - Shows the units the values are quoted in. *Keep it.*
+* * **Provisional or Ratified** - P for provisional and R for Ratified. Provisional measurements are subjected to change. Ratified measurements have been through the full QAQC procedure and will not change in the future. *Keep it.*
 
 * **1- Changing title names** - I changed names in the most intuitive fashionable way.
 * **2- Rearranging columns order** - I reorder the columns, keeping in mind possible visualizations.
