@@ -2,59 +2,26 @@
 
 # Project: Data Cleaning and Manipulation with Pandas
 
-## Overview
+## Descripción
 
-The goal of this project is to combine everything you have learned about data wrangling, cleaning, and manipulation with Pandas so you can see how it all works together. For this project, you will start with one of these messy data sets: 
+Se utilizó la información del siguiente link:
 
-* [Avocado prices](https://www.kaggle.com/neuromusic/avocado-prices)
 * [Plane crashes](https://www.kaggle.com/nguyenhoc/plane-crash)
-* [Goodreads books](https://www.kaggle.com/jealousleopard/goodreadsbooks)
-* [Top 1000 songs](https://opendata.socrata.com/Fun/Top-1-000-Songs-To-Hear-Before-You-Die/ed74-c6ni)
-* [Met visitors](https://github.com/metmuseum/openaccess/)
-* [National Drug Directory](https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory)
-* [London air quality](https://www.londonair.org.uk/london/asp/datadownload.asp)
-* [Climate change](https://data.world/worldbank/climate-change-data)
-* [European soccer](https://data.world/data-society/european-soccer-data)
-* [Big cities health](https://data.world/health/big-cities-health)
 
-You will need to import a data set, use your data wrangling skills to clean it up, prepare it to be analyzed, and then export it as a clean CSV data file.
-
-**You will be working individually for this project**, but we'll be guiding you along the process and helping you as you go. Show us what you've got!
+La base limpia se encuentra en el documento llamado: **plane_crash_clean.csv** dentro de la carpeta **Lab**
 
 ---
 
-## Technical Requirements
+## Procedimiento:
 
-The technical requirements for this project are as follows:
+* 1.- Despues de descargar la información en un archivo csv planecrashinfo_20181121001952.csv, se importa utilizando pandas.read_csv.
+* 2.- Las columnas de 'aboard' y 'fatalities' contienen datos del total de pasajeros a bordo y fallecidos separados por tripulación y pasajeros,así que se separan estas columnas en tres cada una y se obtienen los datos númericos obtenido 6 columnas más en total. Estas columnas se agregan al dataframe original ultilizando el index correspondiente.
+* 3.- Se limpia el dataframe plane_crashes de los símbolos '?' y se les asigna un valor nulos para trabajar con ellos.
+* 4.- Se escogen las columnas con más de 1000 datos nulos para eliminarlas. En esta lista tambien se agrega 'registration', 'aboard' y 'fatalities'.Ya que 'registration' no tiene mucha relevancia y las otras dos columnas ya se separaron en unas nuevas columnas en el paso 2.
+* 5.- En las columnas que se tienen datos númericos se cambian los valores nulos por ceros para evitar errores.
+* 6.- Se cambian las columnas con datos númericos a tipo int. Todas las demas columnas son tipo Object.
+* 7.- Tambien se cambia la columna de date a un formato de fecha dia/mes/año y se convierte a tipo date.
+* 8.- Existen unas columnas en las que los totales de personas abordo y personas fallecidas no es correcto, ya que no cuadra con la suma de pasajeros y tripulación. Se corrigen las filas necesarias.
+* 9.- Se muestran las estadísticas generales del dataframe.
+* 10.- Se modifica el orden de las columnas y finalmente se crea el archivo plane_crash_clean.csv con el dataframe resultante.
 
-* The dataset that we provide you is a significantly messy data set. Apply the different cleaning and manipulation techniques you have learned.
-* Import the data using Pandas.
-* Examine the data for potential issues.
-* Use at least 8 of the cleaning and manipulation methods you have learned on the data.
-* Produce a Jupyter Notebook that shows the steps you took and the code you used to clean and transform your data set.
-* Export a clean CSV version of your data using Pandas.
-
-## Necessary Deliverables
-
-The following deliverables should be pushed to your Github repo for this chapter.
-
-* **A cleaned CSV data file** containing the results of your data wrangling work.
-* **A Jupyter Notebook (data-wrangling.ipynb)** containing all Python code and commands used in the importing, cleaning, manipulation, and exporting of your data set.
-* **A ``README.md`` file** containing a detailed explanation of the process followed in the importing, cleaning, manipulation, and exporting of your data as well as your results, obstacles encountered, and lessons learned.
-
-## Suggested Ways to Get Started
-
-* **Examine the data and try to understand what the fields mean** before diving into data cleaning and manipulation methods.
-* **Break the project down into different steps** - use the topics covered in the lessons to form a check list, add anything else you can think of that may be wrong with your data set, and then work through the check list.
-* **Use the tools in your tool kit** - your knowledge of Python, data structures, Pandas, and data wrangling.
-* **Work through the lessons in class** & ask questions when you need to! Think about adding relevant code to your project each night, instead of, you know... _procrastinating_.
-* **Commit early, commit often**, don’t be afraid of doing something incorrectly because you can always roll back to a previous version.
-* **Consult documentation and resources provided** to better understand the tools you are using and how to accomplish what you want.
-
-## Useful Resources
-
-* [Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/)
-* [Pandas Tutorials](https://pandas.pydata.org/pandas-docs/stable/tutorials.html)
-* [StackOverflow Pandas Questions](https://stackoverflow.com/questions/tagged/pandas)
-* [Awesome Public Data Sets](https://github.com/awesomedata/awesome-public-datasets)
-* [Kaggle Data Sets](https://www.kaggle.com/datasets)
