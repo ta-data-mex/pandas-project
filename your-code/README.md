@@ -4,18 +4,21 @@
 
 ## Plane Crashings
 
-El archivo original planecrash.csv es una base que contiene informacion sobre accidentes aèreos
+El archivo original planecrash.csv es una base que contiene informaciòn sobre accidentes aèreos
 
 * 13 columnas
 * 5784 renglones
 * Fecha, Hora,lugar,nùmero de vuelo,nùmero de registro,
-* Tipo de transporte,tipo de vuelo,nùmero de pasajeros y descripcion del accidente
+* Tipo de transporte,tipo de vuelo,nùmero de pasajeros y descripciòn del accidente
 
 
 **
 --
 
 ## Mis pasos fueron los siguientes:
+
+
+*Importar numpy y pandas
 
 *Importar el csv y revisar los datos.
 
