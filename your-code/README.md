@@ -4,7 +4,7 @@
 
 ## Plane Crashings
 
-El archivo original planecrash.csv es una base que contiene informacion sobre accidentes arèos
+El archivo original planecrash.csv es una base que contiene informacion sobre accidentes aèreos
 
 * 13 columnas
 * 5784 renglones
