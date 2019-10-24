@@ -1,0 +1,17 @@
+
+
+
+_____-----______------_______-------___-----____---_-______---____---___---_-____
+
+Descarga la base de datos desde esta liga:
+https://drive.google.com/file/d/1jkQegLJnl8EpQfZNLr7_szCGfLsFYHdv/view?usp=sharing
+
+archivo: database.sqlite
+
+pega el archivo en la misma carpeta/ruta donde pegues el documento de Jupyter. 
+
+El archivo CSV limpio y terminado se creará al ejecutar el Jupyter
+
+Have fun!.
+
+_____-----______------_______-------___-----____---_-______---____---___---_-____
